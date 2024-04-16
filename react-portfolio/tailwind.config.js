@@ -4,8 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        transitionDelay: {
+          '0': '0ms',
+          '2000': '2000ms', 
+        },
         papayawhip: {
-          light: 'fef4e4',
+          light: '#fef4e4',
           DEFAULT: '#ffefd5',
           dark: '#fee5bc',
         }

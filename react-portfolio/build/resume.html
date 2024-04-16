@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Animation</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
+    }
+
+    .spinner {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      animation: rotate 2s linear infinite;
+    }
+
+    .spinner .circle {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #003478;
+      transform-origin: center;
+      animation: pulse 2s alternate infinite;
+    }
+
+    .spinner .circle:first-child {
+      top: 0;
+      left: 50%;
+      margin-left: -50px;
+    }
+
+    .spinner .circle:last-child {
+    background-color: #C60C31;
+      bottom: 0;
+      left: 50%;
+      margin-left: -50px;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="spinner">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</body>
+
+</html>

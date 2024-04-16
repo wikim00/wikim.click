@@ -14,19 +14,19 @@
   <header class="sticky top-0 z-10 bg-teal-700 text-white">
     <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
       <h1 class="text-3xl font-medium">
-        <a href="#hero">🚀 Home</a>
+        <a href="#home">🚀 Home</a>
       </h1>
       <div>
         <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
           <!-- &#9776; -->
-          <div
+       <div
             class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
           </div>
         </button>
         <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
-          <a href="#rockets" class="hover:opacity-90">Resume</a>
-          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+          <a href="#resume" class="hover:opacity-90">Resume</a>
+          <a href="#projects" class="hover:opacity-90">Projects</a>
+          <a href="#contact" class="hover:opacity-90">Contact Me</a>
         </nav>
       </div>
     </section>
@@ -36,35 +36,32 @@
                 &times;
             </button> -->
       <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
-        <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
-        <a href="#rockets" class="w-full py-6 text-center hover:opacity-90">Our Rockets</a>
-        <a href="#testimonials" class="w-full py-6 text-center hover:opacity-90">Testimonials</a>
-        <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Us</a>
-        <a href="#footer" class="w-full py-6 text-center hover:opacity-90">Legal</a>
+        <a href="#home" class="w-full py-6 text-center hover:opacity-90">Home</a>
+        <a href="#resume" class="w-full py-6 text-center hover:opacity-90">Resume</a>
+        <a href="#projects" class="w-full py-6 text-center hover:opacity-90">Projects</a>
+        <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Me</a>
       </nav>
     </section>
   </header>
   <main class="mx-auto max-w-4xl">
-    <section id="hero"
+    <section id="home"
       class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
       <article class="sm:w-1/2">
-        <h2 class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl">
+        <h2 id="first-text" class="max-w-md text-center text-5xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl fade-in">
           Hello, my name is
-          <span class="text-indigo-700 dark:text-indigo-300">William Kim</span>
+          <span class="text-indigo-300 dark:text-indigo-300">William Kim</span>
         </h2>
-        <p class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
-          I'm a software engineer from Los Angeles.
-        </p>
-        <p class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
-          
-        </p>
+        
+        <h2 class="transition-opacity max-w-md text-center text-xl text-slate-900 dark:text-white sm:text-left sm:text-xl fade-in-slide-up">
+          I'm an aspiring software engineer from Los Angeles.
+        </h2>
       </article>
-      <img class="w-1/2" src="./img/rocketdab.png" alt="Rocket Dab" />
+      <img class="w-1/2 fade-in" src="./img/boba.jpg" alt="boba-picture" />
     </section>
 
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-    <section id="rockets" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+    <section id="resume" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
       <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
         Our Rockets
       </h2>
@@ -113,7 +110,7 @@
 
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-    <section id="testimonials"
+    <section id="projects"
       class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
       <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
         Testimonials
@@ -188,20 +185,15 @@
   <footer id="footer" class="bg-teal-700 text-xl text-white">
     <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
       <address>
-        <h2>Acme Rocket-Powered Products, Inc.</h2>
-        555 Astro Way<br />
-        Fairfield, New Jersey 12345-5555<br />
-        Email:
-        <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a><br />
-        Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+        <a href="mailto:wkim0215@gmail.com"wkim0215@gmail.com</a><br />
       </address>
       <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
-        <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
-        <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-        <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        <a href="#resume" class="hover:opacity-90">Resume</a>
+        <a href="#testimonials" class="hover:opacity-90">Projects</a>
+        <a href="#contact" class="hover:opacity-90">Contact Me</a>
       </nav>
       <div class="flex flex-col sm:gap-2">
-        <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
+        <p class="text-right">Built with TailwindCSS 2024</span></p>
         <p class="text-right">All Rights Reserved</p>
       </div>
     </section>
