@@ -1,0 +1,226 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #ffffff;
+}
+
+header {
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro-text h1 {
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    color: #000000;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-buttons .button {
+    background: #ffffff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.social-buttons .button:hover {
+    background: #c60c30;
+    color: #ffffff;
+    border-color: #c60c30;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons .button:nth-child(2):hover {
+    background: #0033a0;
+    color: #ffffff;
+    border-color: #0033a0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.projects-content {
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.projects-content h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.project-details {
+    flex-grow: 1;
+}
+
+.project-details h2 {
+    margin-bottom: 0.5rem;
+}
+
+.project-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Existing styles */
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 1rem; /* Adjusted margin */
+}
+
+.project-details {
+    flex-grow: 1;
+}
+
+/* Updated styles */
+.project-details {
+    text-align: left;
+}
+
+.project-details h2 {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.project-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Existing styles */
+
+.resume-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.resume-content {
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.resume-content h1 {
+    margin-bottom: 1rem;
+}
+
+.pdf-viewer {
+    width: 90%; /* Adjusted width */
+    max-width: 800px; /* Adjusted max-width */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 80vh; /* Adjusted height */
+}
+
+/* Additional styles */
+@media screen and (max-width: 768px) {
+    .pdf-viewer {
+        width: 100%; /* Adjusted width for smaller screens */
+        height: 70vh; /* Adjusted height for smaller screens */
+    }
+}

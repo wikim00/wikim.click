@@ -3,71 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - William</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #000;
-        }
-        header {
-            background-color: #fff;
-            color: #000;
-            padding: 1rem 0;
-            text-align: center;
-            border-bottom: 5px solid #000;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
-            border: 1px solid #000;
-        }
-        h2 {
-            color: #000;
-            border-bottom: 2px solid #f4f4f4;
-            padding-bottom: 0.5rem;
-        }
-    </style>
+    <title>William Kim's Projects</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Projects</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="youtube.html">YouTube</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <h2>Projects</h2>
-        <p>Here are some of the projects I have worked on:</p>
-        <ul>
-            <li>Project 1: Description of project 1.</li>
-            <li>Project 2: Description of project 2.</li>
-            <li>Project 3: Description of project 3.</li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </div>
+    <main class="projects-main">
+        <div class="projects-content">
+            <h1>Projects</h1>
+            <section class="project">
+                <img src="therightstufflogo.jpg" alt="The Right Stuff Logo" class="project-logo">
+                <div class="project-details">
+                    <h2>Currently Working at The Right Stuff</h2>
+                    <p>Currently working as a software engineer at The Right Stuff, a conservative dating app, contributing to the development of features and enhancements to improve user experience.</p>
+                </div>
+            </section>
+            <section class="project">
+                <img src="choclogo.png" alt="CHOC Healthcare Logo" class="project-logo">
+                <div class="project-details">
+                    <h2>Data Hackathon for CHOC Healthcare using WSI</h2>
+                    <p>Participated in a data hackathon for CHOC Healthcare focusing on Whole Slide Imaging (WSI) data. Developed innovative solutions to improve healthcare outcomes.</p>
+                </div>
+            </section>
+            <section class="project">
+                <img src="ucilogo.png" alt="UCI Logo" class="project-logo">
+                <div class="project-details">
+                    <h2>Data Hackathon for UCI using US Census Data</h2>
+                    <p>Engaged in a data hackathon organized by the University of California, Irvine (UCI), utilizing US Census data to uncover insights and drive social impact projects.</p>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
